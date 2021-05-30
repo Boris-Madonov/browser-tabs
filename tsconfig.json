@@ -22,5 +22,6 @@
   },
   "include": [
     "src"
-  ]
+  ],
+  "typescript.validate.enable":true
 }
