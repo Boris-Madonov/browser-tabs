@@ -4,7 +4,7 @@ import './index.css';
 
 function TabBar() {
   return (
-    <div className="tab-bar">
+    <nav className="tab-bar">
       <Tab
         text="Home"
         link=""
@@ -17,7 +17,7 @@ function TabBar() {
         text="Features"
         link="features"
       />
-    </div>
+    </nav>
   );
 }
 
