@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import './index.css';
 
 interface TabProps {
   text: string,
+  link: string
 }
 
 function Tab ({
   text,
+  link
 }: TabProps) {
 const [highlight, setHighlight] = useState({
   left: 0,
@@ -31,17 +34,22 @@ const hideHighlight = (e: any): void => {
 }
 
   return (
-    <div
-      className="tab"
-      onMouseMove={moveHighlight}
-      onMouseOut={hideHighlight}
+    <NavLink
+        to={`/${link}`}
+        exact={true}
     >
       <div
-        className="tab__highlight"
-        style={highlight}
-      />
-      {text}
-    </div>
+        className="tab"
+        onMouseMove={moveHighlight}
+        onMouseOut={hideHighlight}
+      >
+        <div
+          className="tab__highlight"
+          style={highlight}
+        />
+        {text}
+      </div>
+    </NavLink>
   );
 }
 
