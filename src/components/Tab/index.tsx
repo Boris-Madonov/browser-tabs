@@ -35,24 +35,24 @@ const hideHighlight = (e: any): void => {
 }
 
   return (
-    <NavLink
-      to={`/${link}`}
-      exact={true}
-      className="tab__link"
-      activeClassName="tab__link_is-active"
-    >
       <div
         className="tab"
         onMouseMove={moveHighlight}
         onMouseOut={hideHighlight}
       >
-        <div
-          className="tab__highlight"
-          style={highlight}
-        />
-        {text}
+        <NavLink
+          to={`/${link}`}
+          exact={true}
+          className="tab__link"
+          activeClassName="tab__link_is-active"
+        >
+          <div
+            className="tab__highlight"
+            style={highlight}
+          />
+          {text}
+        </NavLink>
       </div>
-    </NavLink>
   );
 }
 

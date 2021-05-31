@@ -1,12 +1,7 @@
 .tab {
   position: relative;
-  width: 300px;
-  height: 80px;
   line-height: 1.2;
   font-size: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
 }
 
@@ -26,6 +21,11 @@
   text-decoration: none;
   background-color: rgb(104, 76, 216);
   border-radius: 10px 10px 0 0;
+  width: 300px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .tab__link_is-active {
