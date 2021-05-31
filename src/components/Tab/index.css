@@ -1,15 +1,12 @@
 .tab {
   position: relative;
-  background-color: rgb(104, 76, 216);
   width: 300px;
   height: 80px;
   line-height: 1.2;
   font-size: 25px;
-  border-radius: 10px 10px 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   overflow: hidden;
 }
 
@@ -22,4 +19,15 @@
   background: radial-gradient(rgba(157, 128, 238, 1), rgba(157, 128, 238, 0));
   pointer-events: none;
   transition: opacity 0.5s ease;
+}
+
+.tab__link {
+  color: white;
+  text-decoration: none;
+  background-color: rgb(104, 76, 216);
+  border-radius: 10px 10px 0 0;
+}
+
+.tab__link_is-active {
+  background-color: rgb(75, 54, 162);
 }

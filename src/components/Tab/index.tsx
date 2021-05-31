@@ -35,8 +35,10 @@ const hideHighlight = (e: any): void => {
 
   return (
     <NavLink
-        to={`/${link}`}
-        exact={true}
+      to={`/${link}`}
+      exact={true}
+      className="tab__link"
+      activeClassName="tab__link_is-active"
     >
       <div
         className="tab"
