@@ -18,12 +18,6 @@
   box-shadow: 0 0 80px 10px rgb(69, 57, 115);
 }
 
-.app__browser-tabs {
-  padding: 20px 20px 0;
-  display: flex;
-  flex-direction: row;
-}
-
 .app__browser-viewport {
   background-color: rgb(75, 54, 162);
   font-size: 40px;

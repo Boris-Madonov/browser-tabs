@@ -1,13 +1,9 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route
+  BrowserRouter as Router
 } from "react-router-dom";
-import Tab from '../Tab';
-import Home from '../../pages/Home';
-import About from '../../pages/About';
-import Features from '../../pages/Features';
+import TabBar from '../TabBar';
+import Routers from '../../Routers'
 import './index.css';
 
 function App() {
@@ -15,39 +11,9 @@ function App() {
     <Router>
       <div className="app">
         <div className="app__browser">
-          <div className="app__browser-tabs">
-            <Tab
-              text="Home"
-              link=""
-            />
-            <Tab
-              text="About"
-              link="about"
-            />
-            <Tab
-              text="Features"
-              link="features"
-            />
-          </div>
+          <TabBar />
           <div className="app__browser-viewport">
-            <Switch>
-              <Route
-                path="/about"
-              >
-                <About />
-              </Route>
-              <Route
-                path="/features"
-              >
-                <Features />
-              </Route>
-              <Route
-                path="/"
-                exact={true}
-              >
-                <Home />
-              </Route>
-            </Switch>
+            <Routers />
           </div>
         </div>
       </div>

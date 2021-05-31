@@ -18,6 +18,7 @@ const [highlight, setHighlight] = useState({
 });
 
 const moveHighlight = (e: any): void => {
+  // если компонент не содержит класс из актив то:
   setHighlight({
     left: e.nativeEvent.layerX - 300,
     top: e.nativeEvent.layerY - 120,
